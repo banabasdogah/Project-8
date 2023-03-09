@@ -27,11 +27,13 @@ manufac_list = sorted(df['manufacturer'].unique())
 manufacturer_1 = st.selectbox(
                               label='select manufacturer 1', #title of select box
                               options=manufac_list, #options listed in the select box
-                              index=manufac_list.index('chevrolet') #default preselected option)
+                              index=manufac_list.index('chevrolet') #default preselected option
+)
 manufacturer_2 = st.selectbox(
                               label='select manufacturer 2', 
                               options=manufac_list, #options listed in the select box
-                              index=manufac_list.index('hyundai') #default preselected option)
+                              index=manufac_list.index('hyundai') #default preselected option
+)
                               
 # filter the dataframe
 mask_filter = (df['manufacturer'] == manufacturer_1) | (df['manufacturer'] == manufacturer_2)
