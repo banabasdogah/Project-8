@@ -52,7 +52,7 @@ fig = px.histogram(df_filtered,
                       nbins=30,
                       color='manufacturer',
                       histnorm=histnorm,
-                      barmode-'overlay')
+                      barmode='overlay')
    
 # display the figure with stream lit
 st.write(fig)
